@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FWI Prediction</title>
+</head>
+<body>
+
+
+
+    <h1>🔥 Forest Fire Prediction</h1>
+
+    <form action="{{ url_for('predict_datapoint') }}" method="post">
+
+        <input type="text" name="Temperature" placeholder="Temperature" required /><br><br>
+        <input type="text" name="RH" placeholder="Humidity (RH)" required /><br><br>
+        <input type="text" name="Ws" placeholder="Wind Speed" required /><br><br>
+        <input type="text" name="Rain" placeholder="Rain" required /><br><br>
+        <input type="text" name="FFMC" placeholder="FFMC" required /><br><br>
+        <input type="text" name="DMC" placeholder="DMC" required /><br><br>
+        <input type="text" name="ISI" placeholder="ISI" required /><br><br>
+        <input type="text" name="Classes" placeholder="Classes" required /><br><br>
+
+        <!-- Region Dropdown -->
+        <select name="Region" required>
+            <option value="">Select Region</option>
+            <option value="0">Algerian Forest 🌲</option>
+            <option value="1">Sidi Bel Abbes (Seourane) 🌳</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+</body>
+</html>

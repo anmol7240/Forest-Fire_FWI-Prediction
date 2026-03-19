@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FWI Result</title>
+</head>
+<body>
+
+
+    <h1>🔥 Prediction Result</h1>
+
+    {% if results %}
+        <h2>FWI Value: {{ results }}</h2>
+
+        {% if risk == "Low" %}
+            <h3 style="color:green;">Low Risk ✅</h3>
+        {% elif risk == "Moderate" %}
+            <h3 style="color:orange;">Moderate ⚠️</h3>
+        {% elif risk == "High" %}
+            <h3 style="color:red;">High 🔥</h3>
+        {% else %}
+            <h3 style="color:darkred;">Very High 🚨</h3>
+        {% endif %}
+    {% endif %}
+
+    <br>
+    <a href="/">⬅ Go Back</a>
+
+</body>
+</html>
