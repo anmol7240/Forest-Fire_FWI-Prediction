@@ -8,7 +8,7 @@ from sklearn.preprocessing import StandardScaler
 application = Flask(__name__)
 app = application
 
-## 1st step my web application should be interact with ridge.pkl ans standard.pkl
+## 1st step my web application should be interact with ridge.pkl and standard.pkl
 ## import ridge regressor and scaler pickel 
 ridge_model = pickle.load(open('models/ridge.pkl','rb'))
 standard_scaler = pickle.load(open('models/scaler.pkl','rb'))
