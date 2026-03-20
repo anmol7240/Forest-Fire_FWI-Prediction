@@ -85,15 +85,15 @@
         <h3>📊 Why this risk?</h3>
 
         {% if explanation %}
-            <ul>
+            <ul style="list-style: none; padding-left: 0;">
                 {% for item in explanation %}
-                    <li>{{ item }}</li>
+                    <li style="margin: 8px 0;">{{ item }}</li>
                 {% endfor %}
             </ul>
         {% else %}
             <p>Conditions are normal 👍</p>
         {% endif %}
-        
+
     {% endif %}
 
     <a href="/">⬅ Go Back</a>
