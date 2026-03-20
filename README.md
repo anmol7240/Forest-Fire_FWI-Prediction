@@ -57,6 +57,7 @@ https://forest-fire-app.onrender.com/
 - Built using Flask
 - Interactive UI for user input
 - Deployed on Render for live access
+  
 ## 📊 Dataset
 
 The Algerian Forest Fires dataset was used. 🔗 [Dataset](https://www.kaggle.com/datasets/harshvir04/algerian-forest-fires-dataset)
@@ -98,11 +99,10 @@ This dataset is used to predict the Fire Weather Index (FWI) and determine fire 
 ## 📸 Screenshots
 
 ### 🔹 Home Page
-<img width="1092" height="911" alt="Screenshot 2026-03-21 001243" src="https://github.com/user-attachments/assets/423e49f3-79c4-42b9-b8f6-d95e098445e2" />
+<img width="527" height="515" alt="Screenshot 2026-03-21 002633" src="https://github.com/user-attachments/assets/ee98f0c0-03ff-4769-8878-6b31460b80df" />
 
 ### 🔹 Prediction Result
-<img width="825" height="853" alt="Screenshot 2026-03-21 001529" src="https://github.com/user-attachments/assets/593f4296-859a-4e08-9085-a4a40e4d2643" />
-
+<img width="556" height="522" alt="Screenshot 2026-03-21 002559" src="https://github.com/user-attachments/assets/f46bc6b0-0361-4b88-af66-0911fc7114cb" />
 
 
 ## ⚙️ Installation
