@@ -57,8 +57,32 @@ def predict_datapoint():
                 risk = "High"
             else:
                 risk = "Very High"
+            
+            # 🔥 NEW: Explanation logic
+            explanation = []
 
-            return render_template('home.html',results=fwi, risk = risk,region_name=region_name)
+            if Temperature > 35:
+                explanation.append("🔥 High Temperature")
+
+            if RH < 30:
+                explanation.append("💧 Low Humidity")
+
+            if Ws > 20:
+                explanation.append("🌬️ Strong Wind")
+
+            if Rain == 0:
+                explanation.append("☀️ No Rain")
+                
+            if FFMC > 85:
+                explanation.append("🔥 High Fuel Moisture Code (FFMC)")
+
+            if DMC > 50:
+                explanation.append("🔥 High Duff Moisture Code (DMC)")
+
+            if ISI > 10:
+                explanation.append("🔥 High Initial Spread Index (ISI)")
+
+            return render_template('home.html',results=fwi, risk = risk,region_name=region_name, explanation=explanation)
         
 
         except Exception as e:

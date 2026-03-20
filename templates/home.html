@@ -80,6 +80,20 @@
         {% else %}
             <div class="risk veryhigh">Very High 🚨</div>
         {% endif %}
+
+        <!-- 🔥 NEW SECTION -->
+        <h3>📊 Why this risk?</h3>
+
+        {% if explanation %}
+            <ul>
+                {% for item in explanation %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Conditions are normal 👍</p>
+        {% endif %}
+        
     {% endif %}
 
     <a href="/">⬅ Go Back</a>
