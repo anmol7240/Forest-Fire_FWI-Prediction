@@ -114,6 +114,7 @@ git clone https://github.com/anmol7240/Forest-Fire_FWI-prediction.git
 cd Forest-Fire_FWI-prediction
 pip install -r requirements.txt
 python application.py 
+```
 
 ## 🚀 Deployment
 
