@@ -98,12 +98,10 @@ This dataset is used to predict the Fire Weather Index (FWI) and determine fire 
 ## 📸 Screenshots
 
 ### 🔹 Home Page
-
-
+<img width="1092" height="911" alt="Screenshot 2026-03-21 001243" src="https://github.com/user-attachments/assets/423e49f3-79c4-42b9-b8f6-d95e098445e2" />
 
 ### 🔹 Prediction Result
-
-
+<img width="825" height="853" alt="Screenshot 2026-03-21 001529" src="https://github.com/user-attachments/assets/593f4296-859a-4e08-9085-a4a40e4d2643" />
 
 
 
