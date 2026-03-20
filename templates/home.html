@@ -1,29 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>FWI Result</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            margin: auto;
+            margin-top: 80px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 20px rgba(0,0,0,0.6);
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .result {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+
+        .risk {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .low { color: #00ff88; }
+        .moderate { color: orange; }
+        .high { color: red; }
+        .veryhigh { color: darkred; }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            background: linear-gradient(to right, #ff416c, #ff4b2b);
+            color: white;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
 </head>
+
 <body>
 
-
+<div class="container">
     <h1>🔥 Prediction Result</h1>
 
     {% if results %}
-        <h2>FWI Value: {{ results }}</h2>
+        <div class="result">FWI Value: {{ results }}</div>
 
         {% if risk == "Low" %}
-            <h3 style="color:green;">Low Risk ✅</h3>
+            <div class="risk low">Low Risk ✅</div>
         {% elif risk == "Moderate" %}
-            <h3 style="color:orange;">Moderate ⚠️</h3>
+            <div class="risk moderate">Moderate ⚠️</div>
         {% elif risk == "High" %}
-            <h3 style="color:red;">High 🔥</h3>
+            <div class="risk high">High 🔥</div>
         {% else %}
-            <h3 style="color:darkred;">Very High 🚨</h3>
+            <div class="risk veryhigh">Very High 🚨</div>
         {% endif %}
     {% endif %}
 
-    <br>
     <a href="/">⬅ Go Back</a>
+</div>
 
 </body>
 </html>
