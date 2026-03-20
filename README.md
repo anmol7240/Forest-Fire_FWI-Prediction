@@ -142,6 +142,6 @@ Your app will be live in a few minutes!
 ## 🙏 Acknowledgements
 
 - Inspired by real-world environmental datasets for forest fire prediction.
-- Special thanks to **Krish Naik Sir** for his valuable tutorials and guidance in Machine Learning and Flask development.
+- Special thanks to [Krish Naik Sir](https://github.com/krishnaik06) for his valuable tutorials and guidance in Machine Learning and Flask development.
 - Thanks to the open-source community for powerful libraries like Flask, NumPy, Pandas, and Scikit-learn.
 - Gratitude to online resources and documentation that supported the development and deployment of this project.
