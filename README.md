@@ -1,7 +1,7 @@
 
 # 🔥 Forest Fire Prediction Web App using Machine Learning
 
-
+A Flask-based web application that predicts Fire Weather Index (FWI) and classifies forest fire risk levels using environmental factors like temperature, humidity, wind speed, and more. The app also provides explainable insights into why the fire risk is high or low.
 
 
 ## 🎥 Demo
